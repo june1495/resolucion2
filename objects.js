@@ -1,14 +1,14 @@
-// function Persona(nombre, peso, altura) {
-//   this.nombre = nombre;
-//   this.peso = peso;
-//   this.altura = altura;
-//   this.saludar = (str) => {
-//     return `Hola ${str},me llamo ${this.nombre}`;
-//   };
-//   this.bmi = () => {
-//     return this.peso / (this.altura * this.altura);
-//   };
-// }
+function Persona(nombre, peso, altura) {
+  this.nombre = nombre;
+  this.peso = peso;
+  this.altura = altura;
+  this.saludar = (str) => {
+    return `Hola ${str},me llamo ${this.nombre}`;
+  };
+  this.bmi = () => {
+    return this.peso / (this.altura * this.altura);
+  };
+}
 // const pedro = new Persona("Pedro", 72, 1.5);
 // console.log(pedro.saludar("Maria")); // "Hola Maria, me llamo Pedro"
 // console.log(pedro.bmi()); // 32
@@ -34,16 +34,16 @@ console.log(a1.velocidad);
 a1.frenar(2);
 console.log(a1.velocidad); // 1
 
-// a1.frenar(2);
+a1.frenar(2);
 // la velocidad quedaría en -1, así que se deja en 0
 a1.velocidad; // 0
 
-// String.prototype.palindrome = function () {
-//   let reg = /[\W_]/g;
-//   let lowerStr = this.toLowerCase().replace(reg, "");
-//   let reverseStr = lowerStr.split("").reverse().join("");
-//   return lowerStr === reverseStr;
-// };
+String.prototype.palindrome = function () {
+  let reg = /[\W_]/g;
+  let lowerStr = this.toLowerCase().replace(reg, "");
+  let reverseStr = lowerStr.split("").reverse().join("");
+  return lowerStr === reverseStr;
+};
 // console.log("anita lava la tina".palindrome());
 // Ejercicio 4
 // ¿Para qué sirve el Object.create y cómo se relaciona con lo que vimos hoy?
