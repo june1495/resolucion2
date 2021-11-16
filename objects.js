@@ -1,3 +1,4 @@
+
 function Persona(nombre, peso, altura) {
   this.nombre = nombre;
   this.peso = peso;
@@ -34,9 +35,10 @@ console.log(a1.velocidad);
 a1.frenar(2);
 console.log(a1.velocidad); // 1
 
-a1.frenar(2);
+// a1.frenar(2);
 // la velocidad quedaría en -1, así que se deja en 0
 console.log(a1.velocidad); // 0
+
 
 String.prototype.palindrome = function () {
   let reg = /[\W_]/g;
@@ -44,6 +46,7 @@ String.prototype.palindrome = function () {
   let reverseStr = lowerStr.split("").reverse().join("");
   return lowerStr === reverseStr;
 };
+
 // console.log("anita lava la tina".palindrome());
 // Ejercicio 4
 // ¿Para qué sirve el Object.create y cómo se relaciona con lo que vimos hoy?
